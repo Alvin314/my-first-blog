@@ -1,0 +1,16 @@
+from random import randint
+
+
+c = 0
+i = 1
+
+while c!=81:
+    a = randint(0,9)
+    print("A is: " + str(a))
+    b = randint(0 ,9)
+    print("B is: " + str(b))
+    c = a * b
+    print("A * B is: " + str(c))
+    i = i+1
+
+print("Det tog "+ str(i) + "gånger")
