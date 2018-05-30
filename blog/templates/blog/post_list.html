@@ -1,34 +1,13 @@
 <html>
   <head>
       <title>Alvin's blog</title>
-    </head>
-    <body background="https://i.pinimg.com/originals/1b/d7/8d/1bd78daab0bd76b6352dcefceb72c6ca.jpg">
-          <div>
-          <div>
-              <h1 style="font-size: 40px"><a href="/">Alvins Blog</a></h1>
-          </div>
+  </head>
 
-          <div>
-
-         <h2 style="font-size: 27px"><a href="">My first post</a></h2>
-         <p style="font-size: 17px">Thanksgiving is America’s most beloved annual<br> holiday and takes place on the fourth <br>Thursday of November, kicking off the so-called Holiday Season.<br>
-
-The origins of Thanksgiving date back to 1621 when a group of English<br> pilgrims in present-day Massachusetts shared a feast with a tribe of <br>Native Americans to celebrate a plentiful harvest.</p>
-         <a style="font-size: 20px" href="https://www.fluentu.com/blog/english/thanksgiving-list-of-foods/">What to eat on thanksgiving</a><br>
-         <img width="350px"src="https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/citrus-and-butter-turkey-xl-recipe1115.jpg">
-
-     </div>
-
-     <div>
-         <h2><a href="">My second post</a></h2>
-         <ph style="font-size: 17px">New Year’s Eve is a day of mixed feelings for many people.<br> On one hand, it is a time to celebrate the end of the year gone by and<br> welcome what is in store in the New Year. On the other hand, some people<br> experience a sense of nostalgia as they reflect on the events that took place in their lives in the past 12 months. Many people start thinking about New Year’s <br>resolutions at this time of the year.
-Some people celebrate New Year’s Eve by attending midnight church services, while others gather around in <br>public venues such as Times Square in New York City, or Trafalgar Square in London to count down for the closing seconds of the old year. <br>Many people hold parties to farewell the finishing year and to celebrate the New Year. The size of festive events for <br>New Year’s Eve can vary in size and theme. Some people attend formal masquerade balls while others have costume parties.<br> Some people have small parties or gatherings at their homes. Many New Year’s Eve celebrations are highlighted by firework displays.</p>
-        <a style="font-size: 20px" href="https://www.visitlondon.com/things-to-do/whats-on/new-years-eve/things-to-do-on-new-years-eve-in-london">What to do on New Year's eve</a>
-     </div>
+  <body>
+    <div>
+      {% for game in games %}
+        <h2> {{ game }} <h2>
+      {% endfor %}
    </div>
  </body>
-</html>
-
-    <img width="400px"src="http://www.thenewforestinn.co.uk/wp-content/uploads/2017/10/newyearseve.jpg">
-      <p style="font-size: 20px">published: 29.05.2018, 14:23. Last update: 30.05.2018, 12:09 by /admin Alvin Hornliden</p>
 </html>
