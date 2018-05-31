@@ -14,3 +14,8 @@ p {
   padding-left: 20px;
   padding-top: 10px;
 }
+
+
+.game-wrapper img{
+  width: 300px;
+}
