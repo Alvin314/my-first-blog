@@ -1,6 +1,7 @@
 a{
   color: #c40303;
   font-size: 17px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 body {
@@ -17,5 +18,5 @@ p {
 
 
 .game-wrapper img{
-  width: 300px;
+  width: 300px
 }

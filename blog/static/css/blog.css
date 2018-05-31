@@ -4,7 +4,7 @@ body {
 
 h2 {
     color: black;
-    font-weight:bold;
+    font-family: 'Orbitron', sans-serif;
 }
 
 p {
@@ -14,6 +14,8 @@ p {
 
 a{
   color: #ff00fa;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 17px;
 }
 
 .content-wrapper {
