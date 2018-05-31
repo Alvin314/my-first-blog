@@ -1,3 +1,24 @@
-h2 a {
-    color: white;
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-weight:bold;
+}
+
+p {
+  font-size: 17px;
+  font-style: sans-serif;
+}
+
+a{
+  color: #ff00fa;
+}
+
+.content-wrapper {
+  height: 100%;
+  background-image: url(https://i.pinimg.com/originals/8d/9e/1f/8d9e1fa569b0227e7b78db1d1b034f73.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
 }

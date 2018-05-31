@@ -1,38 +1,30 @@
+{% load staticfiles %}
 <html>
-  <head>
-      <title>Alvin's website</title>
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-
-    </head>
-    <body background="http://www.hd-freewallpapers.com/latest-wallpapers/cute-pug-puppies-images-download.jpg">
-          <div>
-          <div>
-
-          </div>
-
-          <div>
-
-         <h2 style="font-size: 35px"><a href="">Moviestarplanet</a></h2>
-         <p style="font-size: 17px"> </p>
-         <a style="font-size: 20px" href="https://www.moviestarplanet.com/"> sign up for Moviestarplanet here!</a>
-         <br>
-         <img width="350px"src="https://images-na.ssl-images-amazon.com/images/I/81xk3hcqOXL.png">
-
-     </div>
-
-     <div>
-         <h2 style="font-size: 35px"><a href="">Club pinguin</a></h2>
-         <ph style="font-size: 17px"> </p>
-        <a style="font-size: 20px" href="https://www.reddit.com/r/ClubPenguin/comments/62cd0r/rest_in_peace_club_penguin/">Here you can debate about Club Pinguin's death.</a>
-     </div>
-   </div>
- </body>
-</html>
-
-    <img width="400px"src="https://outline-prod.imgix.net/20170316-M4uLvNJu3IxkSy60g03P?auto=format&q=60&w=1280&s=53ccc9ad4ad3e9d116d4fb6291f1eb43">
+<head>
+  <title>Alvin's website</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+  <div class="content-wrapper">
+    <h2 style="font-size: 35px"><a href="">Moviestarplanet</a></h2>
+    <p style="font-size: 17px"> </p>
+    <a style="font-size: 20px" href="https://www.moviestarplanet.com/"> sign up for Moviestarplanet here!</a>
     <br>
-      <a Style="font-size: 34px" href="{% url 'post_list' %}">Next page, post your own games! </a>  <img width="150px"src="https://image.flaticon.com/icons/svg/25/25426.svg">
-        <p style="font-size: 22px">published: 29.05.2018, 14:43. Last update: 31.05.2018, 10:16 by Alvin Hornliden</p>
+    <img width="350px"src="https://images-na.ssl-images-amazon.com/images/I/81xk3hcqOXL.png">
+
+
+    <h2 style="font-size: 35px"><a href="">Club pinguin</a></h2>
+    <ph style="font-size: 17px"> </p>
+    <a style="font-size: 20px" href="https://www.reddit.com/r/ClubPenguin/comments/62cd0r/rest_in_peace_club_penguin/">Here you can debate about Club Pinguin's death.</a>
+
+<br>
+  <img width="400px"src="https://outline-prod.imgix.net/20170316-M4uLvNJu3IxkSy60g03P?auto=format&q=60&w=1280&s=53ccc9ad4ad3e9d116d4fb6291f1eb43">
+  <br>
+  <a Style="font-size: 34px" href="{% url 'post_list' %}">Next page, post your own games! </a>  <img width="150px"src="https://image.flaticon.com/icons/svg/25/25426.svg">
+  <p style="font-size: 22px">published: 29.05.2018, 14:43. Last update: 31.05.2018, 10:16 by Alvin Hornliden</p>
+
+</div>
+</body>
 </html>
