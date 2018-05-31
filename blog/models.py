@@ -24,7 +24,9 @@ class Game(models.Model):
     text = models.TextField()
     link = models.URLField()
     published_date = models.DateTimeField(blank=True, null=True)
-        
+    picture = models.ImageField(upload_to='game_images/', blank=True, null=True)
+
+
 
 
     def __str__(self):

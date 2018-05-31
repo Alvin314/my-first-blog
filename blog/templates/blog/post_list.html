@@ -18,6 +18,10 @@
       <p>published: {{ game.published_date }}</p>
       <a href="{{ game.link }}">{{ game.link }}</a>
       <p> {{ game.text|linebreaksbr }} <p>
+        {% if game.picture %}
+          <img width="400px"src="{{ game.picture.url }}">
+        {% endif %}
+
     </div>
       {% endfor %}
     </div>
