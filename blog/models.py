@@ -17,12 +17,14 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-        
+
 class Game(models.Model):
     creator = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     text = models.TextField()
     link = models.URLField()
+    published_date = models.DateTimeField(blank=True, null=True)
+        
 
 
     def __str__(self):

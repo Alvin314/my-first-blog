@@ -13,10 +13,12 @@
   <div>
 
     {% for game in games %}
-    <h2> {{ game.title }} </h2>
-    <a href="{{ game.link }}">{{ game.link }}</a>
-    <p> {{ game.text }} <p>
-
+    <div class = "game-wrapper">
+      <h2> {{ game.title }} </h2>
+      <p>published: {{ game.published_date }}</p>
+      <a href="{{ game.link }}">{{ game.link }}</a>
+      <p> {{ game.text|linebreaksbr }} <p>
+    </div>
       {% endfor %}
     </div>
 </body>
