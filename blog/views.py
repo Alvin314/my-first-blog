@@ -31,7 +31,7 @@ def add_comment_to_game(request, pk):
         form = CommentForm(request.POST)
         if form.is_valid():
             comment = form.save(commit=False)
-            comment.game = post
+            comment.game = game
             comment.save()
             return redirect('post_list')
     else:
