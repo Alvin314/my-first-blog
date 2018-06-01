@@ -4,6 +4,7 @@ from .models import Game
 from .forms import CommentForm
 from .models import Post, Comment
 from django.contrib.auth.decorators import login_required
+from .models import Post, Comment
 # Create your views here.
 def index(request):
     return render(request, 'blog/index.html')
@@ -16,13 +17,13 @@ def post_list(request):
 def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
-    return redirect('post_detail', pk=comment.post.pk)
+    return redirect('post_list')
 
 @login_required
 def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.delete()
-    return redirect('post_detail', pk=comment.post.pk)
+    return redirect('post_list')
 
 
 def add_comment_to_game(request, pk):

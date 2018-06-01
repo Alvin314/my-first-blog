@@ -9,7 +9,7 @@ class Post(models.Model):
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    
+
 
 
 
@@ -47,3 +47,6 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+        
+        def approved_comments(self):
+            return self.comments.filter(approved_comment=True)
