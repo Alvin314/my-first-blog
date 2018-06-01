@@ -18,14 +18,24 @@
       <h2> {{ game.title }} </h2>
       <p>published: {{ game.published_date }} creator: {{ game.creator }}</p>
       <a href="{{ game.link }}">{{ game.link }}</a>
-      <p> {{ game.text|linebreaksbr }} <p>
+      <p> {{ game.text|linebreaksbr }} </p>
         {% if game.picture %}
-          <img src="{{ game.picture.url }}">
+          <img src="{{ game.picture.url }}"/>
         {% endif %}
+<a class="btn btn-default" href="{% url 'add_comment_to_game' pk=game.pk %}">Add comment!</a>
+        {% for comment in game.comments.all %}
+        <div class="comment">
+            <div class="date">{{ comment.created_date }}</div>
+            <strong>{{ comment.author }}</strong>
+            <p>{{ comment.text|linebreaks }}</p>
+        </div>
+    {% empty %}
+        <p>No comments here yet :(</p>
+    {% endfor %}
+</div>
 
-    </div>
-      {% endfor %}
-      <a href="/"> Back to home page </a>
-    </div>
+    {% endfor %} <br>
+      <a href="/"> Back to home page! </a>
+
 </body>
 </html>
